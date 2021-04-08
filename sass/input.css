@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body p {
+  font-size: 0.9rem;
+  color: #484848;
+}
+
+.input-container {
+  position: relative;
+}
+
+.element-center {
+  margin: auto;
+  display: block;
+  border-radius: 50px;
+  padding: 1rem;
+  width: 50%;
+}
+
+#input {
+  height: 3rem;
+  border: 1px solid #ffffff;
+  padding-left: 3rem;
+}
+
+input[type="search"]:focus {
+  outline: 0;
+}
+
+.input-section {
+  position: relative;
+}
+
+#localCurrentDate {
+  margin-top: 3rem;
+  color: #484848;
+}
+
+.content-section {
+  opacity: 1;
+  position: absolute;
+  top: -270px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60%;
+}
+
+.icon {
+  position: absolute;
+  left: 26.5vw;
+  top: 15px;
+}
+
+.hourly-content-direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow: scroll;
+}
+
+.weekly-content-direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sub-title {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=input.css.map */

@@ -1,0 +1,82 @@
+@-webkit-keyframes input-anime {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
+}
+
+@keyframes input-anime {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
+}
+
+.input-anime {
+  position: relative;
+  opacity: 1;
+  -webkit-animation-name: input-anime;
+          animation-name: input-anime;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+#content {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: #484848;
+}
+
+.content {
+  text-align: center;
+}
+
+.content p {
+  margin: 0.5rem;
+}
+
+#current-temp {
+  font-size: 2.5rem;
+}
+
+.weather-icons {
+  font-size: 2rem;
+  margin: 0;
+}
+
+#celsius {
+  font-weight: bold;
+}
+
+#fahrenheit {
+  font-weight: bold;
+}
+/*# sourceMappingURL=css-for-js.css.map */
