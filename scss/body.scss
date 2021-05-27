@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $fontFamily;
+  p {
+    font-size: $basicFont;
+  }
+}
+
+//////////////////////////////////////////////
+//media query for iPad Pro
+@media (max-width: 1024px) {
+  body {
+    p {
+      font-size: $h2Font;
+    }
+  }
+}
+//////////////////////////////////////////////
+//media query for iPad
+@media (max-width: 768px) {
+  body {
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+//////////////////////////////////////////////
+//media query for Surface Duo
+@media (max-width: 540px) {
+  body {
+    p {
+      font-size: 0.7rem;
+    }
+  }
+}

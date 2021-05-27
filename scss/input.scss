@@ -1,0 +1,147 @@
+@import "variable";
+
+.input-container {
+  position: relative;
+}
+
+.element-center {
+  margin: auto;
+  display: block;
+  border-radius: 50px;
+  padding: 1rem;
+  width: 50%;
+}
+
+#input {
+  height: 3rem;
+  border: 1px solid #ffffff;
+  padding-left: 3rem;
+}
+
+input[type="search"]:focus {
+  outline: 0;
+}
+
+.input-section {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 26.5vw;
+  top: 15px;
+}
+
+.night-icon {
+  color: $mainFontColor;
+}
+
+@keyframes input-anime {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-330px);
+  }
+}
+
+.input-anime {
+  position: relative;
+  opacity: 1;
+  animation-name: input-anime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+//////////////////////////////////////////////
+//media query for iPad Pro
+@media (max-width: 1024px) {
+  #input {
+    font-size: $h2Font;
+  }
+}
+//////////////////////////////////////////////
+//media query for iPad
+@media (max-width: 768px) {
+  #input {
+    font-size: 1rem;
+  }
+}
+//////////////////////////////////////////////
+//media query for Surface Duo
+@media (max-width: 540px) {
+  #input {
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+  .icon {
+    left: 27vw;
+    top: 10px;
+  }
+  @keyframes input-anime {
+    100% {
+      transform: translateY(-290px);
+    }
+  }
+}
+//////////////////////////////////////////////
+//media query for iPhone 6/7/8 Plus
+@media (max-width: 414px) {
+  .element-center {
+    width: 60%;
+  }
+  .icon {
+    left: 24vw;
+  }
+}
+//////////////////////////////////////////////
+//media query for iPhone 6/7/8
+@media (max-width: 375px) {
+  @keyframes input-anime {
+    100% {
+      transform: translateY(-280px);
+    }
+  }
+}
+//////////////////////////////////////////////
+//media query for Moto G4, Galaxy S5
+@media (max-width: 375px) {
+  @keyframes input-anime {
+    100% {
+      transform: translateY(-270px);
+    }
+  }
+}
+//////////////////////////////////////////////
+//media query for iPhone5/5SE
+@media (max-width: 320px) {
+  #input {
+    font-size: 0.7rem;
+    height: 1.7rem;
+    padding-left: 2.5rem;
+  }
+  .element-center {
+    padding: 0.7rem;
+  }
+  @keyframes input-anime {
+    100% {
+      transform: translateY(-235px);
+    }
+  }
+  .icon {
+    top: 5px;
+  }
+}
+//////////////////////////////////////////////
+//media query for Galaxy Fold
+@media (max-width: 280px) {
+  .element-center {
+    width: 70%;
+  }
+  .icon {
+    top: 6px;
+    left: 20vw;
+  }
+}

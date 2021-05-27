@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Weather App</title>
+    <link rel="icon" type="image/png" href="./images/icon.png" />
     <!-- css -->
-    <link rel="stylesheet" href="sass/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -19,41 +21,65 @@
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Javascript -->
-    <script defer src="script.js"></script>
+    <script defer src="js/api_keys.js"></script>
+    <script defer src="js/script.js"></script>
   </head>
   <body>
-    <div class="bg-video">
-      <!-- background video -->
-      <video id="video-change" class="bg-video__content" autoplay muted loop>
-        <source src="bg-video/sunny.mp4" type="video/mp4" />
-        Your browser is not supported!
-      </video>
-    </div>
-
-    <div class="input-container">
-      <div class="input-section">
-        <i class="fas fa-search icon"></i>
-        <form class="form">
-          <input
-            class="element-center use-icon"
-            id="input"
-            type="search"
-            placeholder="Search by the city name"
-          />
-        </form>
+    <div class="night-mode">
+      <div class="bg-video">
+        <!-- background video -->
+        <video id="video-change" class="bg-video__content" autoplay muted loop>
+          <source src="bg-video/sunny.mp4" type="video/mp4" />
+          Your browser is not supported!
+        </video>
       </div>
-      <div class="content-section">
-        <div id="localCurrentDate"></div>
-        <div id="content-container1"></div>
-        <div>
-          <p id="content-container-title1"></p>
+      <div class="input-container">
+        <div class="input-section">
+          <i class="fas fa-search icon night-icon"></i>
+          <form class="form">
+            <input
+              class="element-center use-icon"
+              id="input"
+              type="search"
+              placeholder="Search by the city name"
+            />
+          </form>
         </div>
-        <div id="content-container2" class="hourly-content-direction"></div>
-        <div>
-          <p id="content-container-title2"></p>
+        <div class="content-section">
+          <div id="localCurrentDate"></div>
+          <div id="container-for-current-weather"></div>
+          <div>
+            <p id="hourlyTitle"></p>
+          </div>
+          <div id="scroll">
+            <div
+              id="container-for-hourly-weather"
+              class="hourly-content-direction"
+            ></div>
+          </div>
+          <div>
+            <p id="weeklyTitle"></p>
+          </div>
+          <div
+            id="container-for-weekly-weather"
+            class="weekly-content-direction"
+          ></div>
         </div>
-        <div id="content-container3" class="weekly-content-direction"></div>
       </div>
     </div>
+    <div class="attribute">
+      <p>
+        Icons made by
+        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </p>
+    </div>
+    <div class="modal-container hidden">
+      <i class="fas fa-times close-btn"></i>
+      <div class="modal"></div>
+    </div>
+    <div class="overlay hidden"></div>
   </body>
 </html>
