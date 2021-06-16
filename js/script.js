@@ -18,7 +18,10 @@ $(document).ready(function () {
 
 //set global variables
 const api = {
-  key: apiKey.SECRET_API_KEY,
+  //key: apiKey.SECRET_API_KEY,
+  //SECRET_API_KEY: "f87193c8c1fceec76b7fc9727dfdd1da",
+  //Nashさんのkey↓
+  key: "b2b86779f50b9bf6a8c0808905029f25",
   base: "http://api.openweathermap.org/data/2.5/",
 };
 const metric = "metric";
